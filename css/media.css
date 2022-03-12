@@ -1,6 +1,4 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  body {
-  }
   .container {
     min-width: 320px;
     padding: 16px 18px;
