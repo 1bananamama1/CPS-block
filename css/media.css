@@ -1,115 +1,132 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .container {
-    min-width: 320px;
-    padding: 16px 18px;
-    margin: 0 auto;
-  }
-  .upper-menu__block-2,
-  .upper-menu__link-text {
+  /*___________header___________*/
+  .upper-menu__block-2 {
     display: none;
   }
-  .section__img {
-    margin: 0 -16px;
-    width: 320px;
+
+  .upper-menu__link-text {
+    font-size: 0;
   }
+
+  /*___________page___________*/
+
+  .section-img {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  /*___________block__repair___________*/
 }
 
 @media screen and (min-width: 768px) and (max-width: 1119px) {
   .container {
     min-width: 768px;
-    padding: 18px 24px;
+    padding: 0 24px;
   }
+
+  /*___________header___________*/
   .upper-menu__link-text {
-    display: none;
+    font-size: 0;
   }
-  .upper-menu__block-3 {
-    margin-left: 0;
-  }
-  .upper-menu__block-2 {
-    margin-left: auto;
-  }
+
   .upper-menu__block-1 {
-    gap: 33px;
-    position: relative;
+    gap: 42px;
   }
   .upper-menu__item-burger::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 55px;
-    width: 2px;
+    right: -22px;
+    top: 5px;
+    width: 0;
     height: 32px;
-    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
   }
-  .page__content {
-    flex-direction: row;
+  .header__container {
+    padding: 16px;
+  }
+
+  /*___________page___________*/
+
+  .nav__header::before {
+    left: -25px;
+  }
+
+  .main__wrapper {
     flex-wrap: nowrap;
+    gap: 0 40px;
+    align-items: flex-start;
   }
-  .page__navigation {
-    margin-top: 30px;
-    margin-right: -24px;
+  .main__section {
+    flex-basis: 50%;
   }
-  .page__header {
-    margin-bottom: 16px;
+  .section-text__wrapper {
+    max-height: 160px;
   }
-  .page__title::before {
-    left: -28px;
-  }
-  .section__text-container {
-    height: 160px;
-  }
-  .section__text {
+  .section-text__text {
     line-height: 20px;
   }
-  .section__img {
-    width: 360px;
+
+  .slider {
+    margin-right: -24px;
   }
+  /*___________block__repair___________*/
 }
 
 @media screen and (min-width: 1120px) {
-  body {
-    min-width: 1120px;
-  }
-  .container {
-    padding: 42px 33px;
-  }
+  /*___________header___________*/
   .header {
     background-color: transparent;
-    border-bottom: none;
+    border-color: transparent;
+    position: relative;
+  }
+  .header .upper-menu__block-3 {
     position: absolute;
-    right: 0px;
+    top: 42px;
   }
+  .container {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .upper-menu__block-3 {
+    gap: 32px;
+  }
+  .upper-menu__block-2,
   .upper-menu__block-1,
-  .upper-menu__block-2 {
-    display: none;
-  }
   .upper-menu__block-3::before {
     display: none;
   }
-  .page__navigation {
-    margin-right: -33px;
+
+  /*___________page___________*/
+  .nav {
+    margin-top: 42px;
   }
-  .page__title::before {
-    left: -37px;
+
+  .nav__header::before {
+    left: -32px;
   }
-  .page__header {
-    margin-bottom: 16px;
-  }
-  .page__content {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .menu__list {
+
+  .slider {
     overflow-y: visible;
+    margin-right: 0;
+  }
+  .slider__list {
     flex-wrap: wrap;
   }
-  .section__text-container {
-    height: 160px;
-    max-width: 490px;
-    overflow: visible;
-    margin-bottom: 0;
+
+  .main__wrapper {
+    flex-wrap: nowrap;
+    gap: 0 40px;
+    align-items: flex-start;
   }
-  .page__img {
-    width: 511px;
+  .main__section {
+    flex-basis: 50%;
   }
+  .section-text__wrapper {
+    max-height: 160px;
+  }
+  .section-text__button {
+    margin-top: 0;
+  }
+  /*___________block__repair___________*/
 }
