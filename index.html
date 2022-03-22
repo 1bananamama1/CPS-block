@@ -14,9 +14,9 @@
 <body>
 
 <header class="header">
-    <div class="container">  
-        <ul class="header__menu upper-menu">
-            <li  clas="upper-menu__block">
+    <div class="header__container container">  
+        <nav class="header__menu upper-menu">
+            
                 <ul class="upper-menu__block-1">
                     <li class="upper-menu__item upper-menu__item-burger">
                         <button type="button"><img class="upper-menu__icon" src="img/burger-icon.svg" alt="Открыть меню"></button>
@@ -25,8 +25,8 @@
                         <a href="#"> <img class="upper-menu__icon" src="img/header-logo.svg" alt="Логотип компании"> </a>
                     </li>
                 </ul>
-            </li>
-            <li class="upper-menu__block">
+            
+            
                 <ul class="upper-menu__block-2">
                     <li class="upper-menu__item ">
                         <a href="#"><img class="upper-menu__icon" src="img/call-icon.svg" alt="Позвонить"></a>
@@ -38,8 +38,8 @@
                         <a href="#"><img class="upper-menu__icon" src="img/profile-icon.svg" alt="Профиль"></a>
                     </li>
                 </ul>
-            </li>
-            <li class="upper-menu__block">
+           
+            
                 <ul class="upper-menu__block-3">
                     <li class="upper-menu__item upper-menu__item-repair">
                         <a href="#" class="upper-menu__link"> <span class="upper-menu__link-text"> Оставить заявку </span> <img class="upper-menu__icon" src="img/repair-icon.svg" alt="Оставить заявку"></a>
@@ -48,61 +48,71 @@
                         <a href="#" class="upper-menu__link"> <span class="upper-menu__link-text">Статус ремонта</span> <img src="img/checkstatus-icon.svg" alt="Статус ремонта"></a>
                     </li>
                 </ul>
-            </li>
-        </ul>
+            
+        </nav>
     </div>
 </header>
 
-<main class="page">
-    <div class="container"> 
-        <header class="page__header">
-            <h1 class="page__title title">Услуги и сервисы</h1>
-        
-            <nav class="page__navigation menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Ремонтируемые бренды</a>
+<section class="nav">
+    <div class="container">
+        <header class="nav__header">
+            <h1 class="nav__title ">Услуги и сервисы</h1>
+        </header>
+            <nav class="nav__slider slider">
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <a href="#" class="slider__link">Ремонтируемые бренды</a>
                     </li>
-                    <li class="menu__item">
-                       <a href="#" class="menu__link">Ремонтируемые устройства</a>
+                    <li class="slider__item">
+                       <a href="#" class="slider__link">Ремонтируемые устройства</a>
                     </li>
-                    <li class="menu__item">
-                       <a href="#" class="menu__link">Цены на услуги</a>
+                    <li class="slider__item">
+                       <a href="#" class="slider__link">Цены на услуги</a>
                     </li>
-                    <li class="menu__item">
-                       <a href="#" class="menu__link">Адреса сервисных центров</a>
+                    <li class="slider__item">
+                       <a href="#" class="slider__link">Адреса сервисных центров</a>
                     </li>
-                    <li class="menu__item">
-                       <a href="#" class="menu__link">Специальные цены</a>
+                    <li class="slider__item">
+                       <a href="#" class="slider__link">Специальные цены</a>
                     </li>
-                    <li class="menu__item">
-                       <a href="#" class="menu__link">Отзывы</a>
+                    <li class="slider__item">
+                       <a href="#" class="slider__link">Отзывы</a>
                     </li>
                 </ul>
             </nav>
-        </header>
-        <section class="page__content section ">
-            <div class="section__text-block">
-                <div class="section__text-container">
-                    <p class="section__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                        </p>
-                    <p class="section__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-                         что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются
-                         по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                </div>
-            <button type="button" class="section__button">Читать далее</button>
-            </div>
-            <div class="section__img-block">
-                <img src="img/logo_MG_3223.png" alt="фото лого компании" class="section__img">
-            </div>
-        </section>
+        
     </div>
-</main>
+</section>
 
-<footer class="">
+<main class="main">
+    <div class="main__wrapper container"> 
+        
+        <div class="main__section section-text">
+            <div class="section-text__wrapper">
+                <p class="section-text__text">
+                    Мы являемся авторизованным сервисным центром по ремонту техники
+                    Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                    официальной гарантией производителя.
+                </p>
+                <p class="section-text__text">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                    партнера, что подтверждает большое количество постоянных клиентов.
+                    Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                    очередь, советуют нас родным и близким.
+                </p>
+            </div>
+           
+            <button type="button" class="section-text__button"> Читать далее </button>
+        </div>
+        <div class="main__section section-img">
+            <img src="img/logo_MG_3223.png" alt="лого" class="section-img__img">
+        </div>
+    </div>
+</main> 
+
+<!-- <footer class="">
 <a href="block__menu.html">blockmenu</a>
-</footer>
+</footer> -->
 
 </body>
 </html>

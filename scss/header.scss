@@ -1,18 +1,15 @@
 .header {
-  display: flex;
-  font-family: "TT Lakes Medium";
-  background-color: #ffffff;
-  border-bottom: 1px solid #d9fff5;
-  height: 87px;
-  &__menu {
-    display: flex;
-    justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 2px solid #d9fff5;
+  &__container {
+    padding: 16px;
   }
 }
 
 .upper-menu {
-
-
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   &__block-1 {
     display: flex;
     align-items: center;
@@ -20,38 +17,44 @@
     gap: 16px;
   }
 
-  &__item {
-    display: inline-block;
+  &__item-burger {
+    position: relative;
+  }
+
+  &__item-logo {
+    font-size: 0;
   }
 
   &__block-2 {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 16px;
+    margin-right: 20px;
+    display: flex;
     gap: 16px;
   }
 
   &__block-3 {
     display: flex;
     align-items: center;
-    margin-left: auto;
+
+    margin-bottom: 5px;
     gap: 16px;
   }
-
   &__block-3::before {
     content: "";
-    width: 2px;
+    width: 0;
     height: 32px;
-    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
   }
+
   &__link {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    gap: 5px;
   }
+
   &__link-text {
-    display: inline-block;
-    margin-right: 8px;
+    font-family: TT Lakes Medium;
   }
 }
